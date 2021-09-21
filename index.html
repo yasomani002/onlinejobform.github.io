@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>002</title>
+    <style>
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background: rgb(2, 130, 161);
+            margin: 0;
+        }
+        h1{
+            text-align: center;
+        }
+        #container{
+            background: rgb(2, 130, 161);
+            padding-left: 5%;
+            display: flex;
+            align-items: center;
+            justify-content: initial;
+            flex-wrap: wrap;
+        }
+        #container.col{
+            flex-basis: 33%;
+            background: #000;
+            /* height: auto; */
+        }
+        h2{
+            text-align: center;
+            background-color: rgb(8, 192, 238);
+            margin: 0;
+            padding: 10px;
+        }
+        table{
+            width: 100%;
+        }
+        td{
+            padding: 10px;
+        }
+        input,textarea{
+            border-radius: 10px;
+            border: none;
+        }
+        span{
+            color: red;
+        }
+        button{
+            position: absolute;
+            left: 45%;
+            background-color: seagreen;
+            font-size: 1.8rem;
+            margin: 20px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Online Job Application</h1>
+
+    <h2>Personal Information</h2>
+    <div id="container">
+        <div class="col">
+            <table>
+                    <tr>
+                        <td>First Name <span>*</span></td>
+                        <td><input type="text" size="25" required autofocus ></td>
+                    </tr>
+            </table>
+        </div>
+        
+        <div class="col">
+            <table>
+                <tr>
+                    <td>Middle Name <span>*</span></td>
+                    <td><input type="text" size="25" required ></td>
+                </tr>
+            </table>
+        </div>
+        <div class="col">
+            <table>
+                <tr>
+                    <td>Last Name <span>*</span></td>
+                    <td><input type="text" size="25" required ></td>
+             </tr>
+             </table>
+        </div>
+        
+
+    </div>
+
+    <div id="container">
+
+        <div class="col">
+            <table>
+                    <tr>
+                        <td>Father Name <span>*</span></td>
+                        <td><input type="text" size="25" required autofocus ></td>
+                    </tr>
+            </table>
+        </div>
+        
+        <div class="col">
+            <table>
+                <tr>
+                    <td>Mother Name <span>*</span></td>
+                    <td><input type="text" size="25" required ></td>
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+    
+    <div id="container">
+        
+        <div class="col">
+            <table>
+                <tr>
+                    <td>Current Adress</td>
+                     <td><textarea rows="5" cols="25"></textarea></td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="col">
+            <table>
+                <tr>
+                    <td>Permenant Adress <span>*</span></td>
+                    <td> <textarea rows="5" cols="25" required ></textarea> </td>
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+
+    <div id="container">
+        
+        <div class="col">
+            <table>
+                <tr>
+                        <td>Home Phone</td>
+                        <td><input type="text" size="25" required ></td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="col">
+            <table>
+                <tr>
+                    <td>Mobile Phone</td>
+                        <td><input type="text" size="25" required ></td>
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+
+    <div id="container">
+        
+        <div class="col">
+            <table>
+                <tr>
+                    <td>Date of Birth <span>*</span></td>
+                    <td> <input type="date" size="25" required > </td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="col">
+            <table>
+                <tr>
+                    <td>Place of Birth</td>
+                <td><input type="text" size="25"></td> 
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+
+    <div id="container">
+        
+        <div class="col">
+            <table>
+                <tr>
+                    <td>Select Gender</td>
+                    <td><input type="radio" name="gender" value="male">Male</td>
+                    <td><input type="radio" name="gender" value="female">Female</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+    <div id="container">
+        
+        <div class="col">
+            <table>
+                <tr>
+                    <td>Heighest Quelification</td>
+                    <td><input type="text" size="25"></td>
+
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <td>Passing Year</td>
+                    <td><input type="month" size="25"></td>
+                </tr>
+            </table>
+        </div>
+        
+        
+    </div>
+
+    <div id="container">
+        
+        <div class="col">
+            <table>
+                    <tr>
+                        <td>Nationality</td>
+                        <td><select>
+                            <option>Indian</option>
+                            <option>German</option>
+                            <option>American</option>
+                            <option>Other</option>
+                        </select></td>
+                    </tr>
+            </table>
+        </div>
+
+    </div>
+
+    <div id="container">
+        
+        <div class="col">
+            <table>
+                <tr>
+                    <td>Aadhar Card Number <span>*</span></td>
+                <td><input type="text" size="25" required ></td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="col">
+            <table>
+                <tr>
+                    <td>PAN Card Number <span>*</span></td>
+                    <td><input type="text" size="25" required ></td>
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+
+
+    <h2>Education Detailes <span>*</span></h2>
+    <div id="container">
+        <div class="col">
+            <table>
+                <tr>
+                    <td>01</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="col">
+            <table>
+                <tr>
+                    <td><input type="text" size="25" placeholder="Quelification" required ></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="col">
+            <table>
+                <tr>
+                    <td><input type="text" size="25" placeholder="Instituite / University" required ></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="col">
+            <table>
+                <tr>
+                    <td><input type="text" size="25" required placeholder="Year of Passing" ></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="col">
+            <table>
+                <tr>
+                    <td><input type="number" size="5" min="0" max="100" placeholder="Mark (%)<" required></td>
+                </tr>
+            </table>
+        </div>
+
+
+               
+                
+            
+        
+    </div>
+
+    <div id="container">
+        <div class="col">
+            <table>
+                <tr>
+                    <td>02</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="col">
+            <table>
+                <tr>
+                    <td><input type="text" size="25" placeholder="Quelification" required ></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="col">
+            <table>
+                <tr>
+                    <td><input type="text" size="25" placeholder="Instituite / University" required ></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="col">
+            <table>
+                <tr>
+                    <td><input type="text" size="25" required placeholder="Year of Passing" ></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="col">
+            <table>
+                <tr>
+                    <td><input type="number" size="5" min="0" max="100" placeholder="Mark (%)<" required></td>
+                </tr>
+            </table>
+        </div>
+                 
+    </div>
+
+    <div id="container">
+        <div class="col">
+            <table>
+                <tr>
+                    <td>03</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="col">
+            <table>
+                <tr>
+                    <td><input type="text" size="25" placeholder="Quelification" required ></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="col">
+            <table>
+                <tr>
+                    <td><input type="text" size="25" placeholder="Instituite / University" required ></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="col">
+            <table>
+                <tr>
+                    <td><input type="text" size="25" required placeholder="Year of Passing" ></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="col">
+            <table>
+                <tr>
+                    <td><input type="number" size="5" min="0" max="100" placeholder="Mark (%)<" required></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+
+    <h2>Work Experience 01 <span>*</span></h2>
+    <div id="container">
+        
+        <div class="col">
+            <table>
+                <tr>
+                    <td>Company Adress</td>
+                    <td><textarea type="text" rows="5" cols="30"></textarea></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="col">
+            <table>
+                <tr>
+                    <td>Work / Role</td>
+                    <td><textarea type="text" rows="5" cols="30"></textarea></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="col">
+            <table>
+                <tr>
+                    <td> From</td>
+                    <td><input type="month" placeholder="From"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="col">
+            <table>
+                <tr>
+                    <td>To</td>
+                    <td><input type="month" placeholder="To"></td>
+                </tr>
+            </table>
+        </div>
+
+        
+
+
+               
+                
+            
+        
+    </div>
+
+    <h2>Work Experience 02 <span>*</span></h2>
+    <div id="container">
+        
+        <div class="col">
+            <table>
+                <tr>
+                    <td>Company Adress</td>
+                    <td><textarea type="text" rows="5" cols="30"></textarea></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="col">
+            <table>
+                <tr>
+                    <td>Work / Role</td>
+                    <td><textarea type="text" rows="5" cols="30"></textarea></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="col">
+            <table>
+                <tr>
+                    <td> From</td>
+                    <td><input type="month" placeholder="From"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="col">
+            <table>
+                <tr>
+                    <td>To</td>
+                    <td><input type="month" placeholder="To"></td>
+                </tr>
+            </table>
+        </div>
+  
+    </div>
+
+    <h2>Work Experience 03 <span>*</span></h2>
+    <div id="container">
+        
+        <div class="col">
+            <table>
+                <tr>
+                    <td>Company Adress</td>
+                    <td><textarea type="text" rows="5" cols="30"></textarea></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="col">
+            <table>
+                <tr>
+                    <td>Work / Role</td>
+                    <td><textarea type="text" rows="5" cols="30"></textarea></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="col">
+            <table>
+                <tr>
+                    <td> From</td>
+                    <td><input type="month" placeholder="From"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="col">
+            <table>
+                <tr>
+                    <td>To</td>
+                    <td><input type="month" placeholder="To"></td>
+                </tr>
+            </table>
+        </div>
+  
+    </div>
+
+    <h2>Other Details <span>*</span></h2>
+    <div id="container">       
+        <div class="col">
+            <table>
+                <tr>
+                    <td>Job Type</td>
+                    <td><input type="radio" name="job type" value="permenant" >Permenant</td>
+                    <td><input type="radio" name="job type" value="Contract" >Contract</td>
+                    <td><input type="radio" name="job type" value="other" >Other</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div id="container">        
+        <div class="col">
+            <table>
+                <td>Date of Joining</td>
+                <td><input type="date" value="date" ></td>
+            </table>
+        </div>
+    </div>
+
+    <div id="container">       
+        <div class="col">
+            <table>
+                <td>Prefred Job Location</td>
+                <td><input type="radio" name="job location">Ahmedabad</td>
+                <td><input type="radio" name="job location">Pune</td>
+                <td><input type="radio" name="job location">Mumbai</td>
+                <td><input type="radio" name="job location">Jaipur</td>
+            </table>
+        </div>
+    </div>
+
+    <div id="container">       
+        <div class="col">
+            <table>
+                <td>Willing to relocate to hydrabad ?</td>
+                <td><input type="radio" name="relocate">Yes</td>
+                <td><input type="radio" name="relocate">No</td>
+            </table>
+        </div>
+    </div>
+
+    <div id="container">       
+        <div class="col">
+            <table>
+                <td><input type="radio" name="agree"></td>
+                <td colspan="3">All the above mention information is true as per my knowledge</td>
+            </table>
+        </div>
+    </div>
+
+    <button onclick="getvalue()">Submit</button>
+  
+    <script>
+        function getvalue() {
+            alert("Your Application is recived");
+        }
+    </script>
+</body>
+</html>
